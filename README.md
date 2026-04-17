@@ -1,14 +1,6 @@
 # Universal Human Personas
 ### Motivation-centric personas for AI tools, content strategy & product teams
 
-> *"A curious independent is a curious independent whether they're writing code, writing copy, or writing a thesis. They want the same kind of thing from the tool in front of them."*
-
-<p align="center">
-  <img src="diagrams/axis-map.png" alt="The five Universal Human Personas plotted on two axes: outcome-led to curiosity-led, and collaborative to independent" width="85%"/>
-</p>
-
----
-
 ## Why this exists
 
 Most persona frameworks describe users by their job title — "The CTO," "The Frontend Developer," "The Marketing Manager." That stops being useful the moment you step outside the industry they were built for.
@@ -103,23 +95,6 @@ universal-personas/
     ├── axis-map.png                  ← the five personas, plotted
     └── builder-refinement.png        ← parent → sub-personas fan
 ```
-
----
-
-## Roadmap
-
-- [x] Five parent personas written in full
-- [x] Builder sub-persona set (5 variants)
-- [x] Axis map and Builder refinement diagrams
-- [x] LLM knowledge spine for persona generation
-- [ ] Architect sub-personas (Adam, Ari, Asha, Anand, Ada)
-- [ ] Explorer sub-personas (Elan, Eli, Esha, Enzo, Eva)
-- [ ] Connector sub-personas (Cora, Cai, Cleo, Chen, Caleb)
-- [ ] Steady sub-personas (Soren, Sam, Suki, Sana, Stan)
-- [ ] Refinement diagrams for the four remaining archetypes
-- [ ] Reusable Gemini prompt templates for generating more diagrams in the same style
-- [ ] Worked examples: applying the framework to three real products
-
 ---
 
 ## Using this framework with an LLM
