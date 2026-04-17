@@ -1,133 +1,106 @@
-# The Builder Refinement
-## Five contextual variants of the Builder persona
+# Universal Human Personas
+### Motivation-centric personas for AI tools, content strategy & product teams
 
-> *The Builder's axis position — outcome-led, independent — holds constant. What varies is context: life stage, technical fluency, scale of ambition, and what 'shipping' actually means.*
-
-[Return to The Builder parent persona](../Builder.md) · [Return to README](../../README.md)
+> *"A curious independent is a curious independent whether they're writing code, writing copy, or writing a thesis. They want the same kind of thing from the tool in front of them."*
 
 <p align="center">
-  <img src="../../diagrams/builder-refinement.png" alt="The Builder refinement: parent persona Bilal connected to five sub-personas — Bayo, Bilal, Brynn, Benedict, and Blake" width="90%"/>
+  <img src="diagrams/axis-map.png" alt="The five Universal Human Personas plotted on two axes: outcome-led to curiosity-led, and collaborative to independent" width="85%"/>
 </p>
 
 ---
 
-## Why Builder has sub-personas first
+## Why this exists
 
-The Builder persona covers an unusually wide contextual range: a GCSE student building their first working thing, a staff engineer shipping production systems, a solo founder trying to replace a salary, a 20-year domain specialist finally building something in their field, and a non-technical operator who has never written a line of code but is now shipping AI-orchestrated workflows.
+Most persona frameworks are **job-title-centric** — "The CTO," "The Frontend Developer," "The Marketing Manager." They stop being useful the moment you step outside the industry they were built for, and they age poorly because roles drift faster than motivations do.
 
-All five of them are outcome-led. All five are independent. They would all recognise themselves in the parent Builder description. But the content, tools, and messaging that reach them differ enormously — which is exactly what sub-personas are for.
+This repository adapts [Cliff Simpkins' excellent **dev-personas**](https://github.com/cliff-simpkins/dev-personas) framework into something portable. Simpkins built five motivation-centric archetypes for developers. I've generalised them to any human using modern tools — particularly AI tools, content platforms, and new products where the *job title* of the user tells you almost nothing useful about how to serve them.
 
-The naming convention: **all Builder sub-personas start with B**. Other parent personas follow the same rule for their respective letters (A for Architect, E for Explorer, C for Connector, S for Steady).
+The axes, the structure, and the underlying insight are his. The universalisation is mine.
 
 ---
 
-## 📇 The five sub-personas at a glance
+## The five personas
 
-| Sub-persona | Life stage / context | Central question |
+| Persona | One-line | Axis position |
 |---|---|---|
-| 🎓 **Bayo** | Student / early-stage builder | *"Can I prove I can actually do this?"* |
-| 🛠️ **Bilal** | Professional builder (core) | *"How do I ship this by Friday?"* |
-| 🚀 **Brynn** | Entrepreneur / founder | *"How do I multiply my one-person capacity?"* |
-| 🧠 **Benedict** | Domain specialist | *"How do I build tools for my profession?"* |
-| 🧩 **Blake** | No-code operator | *"How do I ship without writing code?"* |
+| 🟣 [**The Architect** *'Adam'*](Personas/Architect.md) | Sees systems. Wants depth, frameworks, first principles. | Curiosity-led · Independent |
+| 🔵 [**The Explorer** *'Elan'*](Personas/Explorer.md) | Follows rabbit holes. Thinks through conversation. | Curiosity-led · Collaborative |
+| 🟠 [**The Builder** *'Bilal'*](Personas/Builder.md) | Ships things. Wants results, not theory. | Outcome-led · Independent |
+| 🩷 [**The Connector** *'Cora'*](Personas/Connector.md) | Thinks through people. Needs help communicating. | Outcome-led · Collaborative |
+| 🟢 [**The Steady** *'Soren'*](Personas/Steady.md) | Needs reliability, clarity, and proven answers. | Outcome-led · Centre |
+
+Every persona in this repository has a name starting with the letter of their archetype — Adam, Elan, Bilal, Cora, Soren. Sub-personas follow the same rule (see [the Builder refinement](Personas/sub-personas/Builder.md) for an example: Bayo, Bilal, Brynn, Benedict, Blake).
 
 ---
 
-## 🎓 Bayo — Student / Early-Stage Builder
+## The two axes
 
-> *"I'm building my first real thing. I need it to actually work."*
+<table>
+<tr>
+<td width="50%">
 
-**Who they are.** Bayo is in education, early in a self-taught journey, or in the first year or two of a career. They are capable, motivated, and somewhat time-rich — but experience-poor. They're driven by **proof of capability**: the satisfying click of a thing working, the portfolio piece, the screenshot they can show a friend.
+### X axis — Inclination towards curiosity
 
-**What they need from AI tools.**
-- Confidence-building defaults — the first build should succeed
-- Teaching-as-you-work, not teaching-before-you-work
-- A visible line between "the AI did this" and "I did this" so they can learn
-- Free-tier access that doesn't run out three hours into a project
+**Outcome-led** ◀ ─────────── ▶ **Curiosity-led**
 
-**Where to reach them.** YouTube, short-form video, Discord communities, university and bootcamp channels, creators who themselves were recently Bayo.
+*"I need this done"* ◀ ─── ▶ *"I want to understand this"*
 
-**Red flags.** Paywalls on anything useful; documentation that assumes production experience; communities dominated by Bilals who dismiss beginner questions.
+Outcome-led users reach for a tool to finish a task. Curiosity-led users reach for a tool to open a door.
 
----
+</td>
+<td width="50%">
 
-## 🛠️ Bilal — Professional Builder (core)
+### Y axis — Independence / Influence
 
-> *"I have a week. I need this shipped."*
+**Collaborative** ▼ ─────────── ▲ **Independent**
 
-**Who they are.** Bilal is the central, archetypal Builder — mid-career, experienced, working inside a company or as a freelancer, with a real deadline and real stakes. They are paid to ship and they know what shipping feels like.
+*"Think with me"* ▼ ───── ▲ *"Give me room to work"*
 
-**What they need from AI tools.**
-- Time-to-first-result measured in minutes
-- A defensible answer to "will this work at production scale?"
-- Integration into an existing stack — API, webhooks, export
-- Predictable pricing that scales with usage
+Collaborative users process by bouncing ideas off others (or an AI). Independent users process alone and want the tool out of their way.
 
-**Where to reach them.** Practitioner communities (Hacker News, r/programming, specialised Slacks), trusted newsletters, peer recommendations, build-in-public Twitter/X.
+</td>
+</tr>
+</table>
 
-**Red flags.** Sales gating on basic features; marketing that talks about "AI journeys"; tools that require a workflow change before producing output.
+Read [**the full axes explanation**](framework/axes-explained.md) for the reasoning behind the placements and why "centre" is a valid position for Soren.
 
 ---
 
-## 🚀 Brynn — Entrepreneur / Founder
+## Using this framework
 
-> *"I'm a company of one. I need AI to be the other twelve."*
+### 🧠 If you're designing an AI tool
+The five personas want fundamentally different things from the same feature. The Architect wants a system prompt they can see and shape. The Builder wants a one-click default that works. The Explorer wants conversational back-and-forth. The Connector wants tone controls. The Steady wants a template that won't embarrass them. Build for all five and you build a product that scales beyond the early-adopter curve.
 
-**Who they are.** Brynn is building a business, not just a product. They are running everything — product, marketing, sales, operations, customer support, finance — with whatever leverage they can find. AI is not a novelty for Brynn; it's the reason the business is viable at this scale.
+### ✍️ If you're writing content or docs
+Pick the persona you're writing *for*, not the persona you *are*. A reference doc written for Adam will bore Bilal and intimidate Soren. Use the per-persona "red flags" and "effective strategies" sections as a pre-flight check.
 
-**What they need from AI tools.**
-- Multi-domain capability: it has to handle the legal doc *and* the landing page copy *and* the customer email
-- Delegation that actually works — tasks that don't need to be re-checked
-- Cost-effectiveness — every tool is evaluated against "could I afford to hire a human instead?"
-- Trustworthy output when no one else is reviewing
-
-**Where to reach them.** Founder communities (Indie Hackers, YC forums, specialised founder circles), build-in-public creators, peer case studies, practitioner-led podcasts.
-
-**Red flags.** Tools priced for enterprises; community content dominated by employees of big companies whose problems don't match; AI assistants that need a lot of supervision.
+### 🧭 If you're a product or sales team
+Different personas buy for different reasons and resist for different reasons. The per-persona **Key Questions to Answer** sections tell you what objections to pre-empt before they're raised.
 
 ---
 
-## 🧠 Benedict — Domain Specialist
+## Repository structure
 
-> *"I've spent twenty years in this field. I want to build tools for the people still in it."*
+```
+universal-personas/
+├── README.md                         ← you are here
+├── LICENSE                           ← CC-BY-4.0
+├── CONTRIBUTING.md
+├── framework/
+│   └── axes-explained.md             ← the two axes, in depth
+├── Personas/
+│   ├── Architect.md                  ← 🟣 Adam
+│   ├── Explorer.md                   ← 🔵 Elan
+│   ├── Builder.md                    ← 🟠 Bilal
+│   ├── Connector.md                  ← 🩷 Cora
+│   ├── Steady.md                     ← 🟢 Soren
+│   └── sub-personas/
+│       └── Builder.md                ← Bayo · Bilal · Brynn · Benedict · Blake
+└── diagrams/
+    ├── axis-map.png                  ← the five personas, plotted
+    └── builder-refinement.png        ← parent → sub-personas fan
+```
 
-**Who they are.** Benedict is a deep expert in a specific non-software domain — medicine, law, accountancy, education, engineering, research, a trade. They've accumulated expertise that, until recently, didn't translate into software. AI has lowered the barrier enough that Benedict can now ship tools that encode their expertise, often for the first time.
 
-**What they need from AI tools.**
-- Respect for their domain expertise — the tool should not over-explain their own field to them
-- Reliable structured output — the specific schemas their field needs
-- Privacy and compliance handling appropriate to their domain (regulated industries especially)
-- A bridge between their domain vocabulary and the technical vocabulary of the tool
 
-**Where to reach them.** Domain-specific publications, professional associations, CPD channels, peer networks, domain-AI case studies by respected practitioners.
-
-**Red flags.** Marketing that condescends to non-programmers; tools with no privacy story in regulated fields; forums dominated by generic advice that ignores domain specifics.
-
----
-
-## 🧩 Blake — No-Code Operator
-
-> *"I don't write code. I ship anyway."*
-
-**Who they are.** Blake is non-technical by traditional measures but is shipping production workflows using AI plus no-code and low-code tooling. They may run growth, operations, or customer experience at a small company, or run their own agency orchestrating AI-driven services. Blake is often underestimated by technical teams and routinely out-ships them on the work that matters to the business.
-
-**What they need from AI tools.**
-- Visual or chat-based interfaces — code-first tooling excludes them
-- First-class integrations with the no-code stack (Zapier, Make, Airtable, Notion, etc.)
-- Pattern libraries for common business workflows
-- Community that doesn't gatekeep — they are builders, just not developers
-
-**Where to reach them.** No-code communities, agency-operator circles, LinkedIn (yes, really), practitioner-led YouTube channels, Makerpad-style tutorial libraries.
-
-**Red flags.** Documentation that requires reading a code sample to understand; communities that treat no-code as an inferior approach; pricing tiers that punish usage without warning.
-
----
-
-## How to use this refinement
-
-When you're designing a feature, a piece of content, or a campaign **for Builders**, pick the sub-persona first. Bayo and Brynn will both read the same case study and have opposite reactions:
-
-- Bayo needs to see that *someone like them* managed to ship it
-- Brynn needs to see that *someone further along* used it to cut a sales rep or an agency
-
-The parent Builder page tells you *what they all share*. This page tells you *what separates them*. Both are needed.
+The personas in this repository are fictional. Any resemblance to real people is coincidental and unintended.
