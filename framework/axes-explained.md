@@ -6,23 +6,25 @@ This document explains why the framework uses the axes it does, what each end of
 
 ---
 
-## The inheritance
+## Why these two axes
 
-Cliff Simpkins' original [dev-personas](https://github.com/cliff-simpkins/dev-personas) framework plots developer personas on two axes:
+Every persona framework lives or dies by its axes. Pick the wrong two questions and your personas collapse into caricatures or converge on the same quadrant. Pick the right two and the personas almost fall out of them naturally.
 
-- **Innovation inclination** — how eager a developer is to adopt new technology
-- **Decision-making power** — whether they're an individual contributor or a leader
+Most frameworks fall back on one of two default pairs:
 
-Those axes work beautifully for developer marketing. They don't generalise. "Innovation inclination" is strange to ask about a novelist, and "decision-making power" isn't a useful question for a solo freelancer or a student. We need axes that describe **how a person wants to think and work**, not where they sit on an org chart.
+- **Demographic axes** — age, income, seniority, industry. These age badly and don't travel across contexts.
+- **Organisational axes** — decision-making power, team size, budget authority. These only make sense inside an org chart, which leaves out solo operators, students, freelancers, and anyone whose role doesn't neatly map to a hierarchy.
 
-So the Universal Human Personas framework swaps both axes for something more portable:
+Neither works for a framework that's supposed to describe *humans using AI tools*. An AI tool is reached by a university student, a staff engineer at a large company, a therapist in solo practice, a middle manager in the public sector, and a retired person using it to write better emails to their GP. The axes need to survive that spread.
 
-| Original (dev-personas) | Universal (this repo) |
+So this framework uses two questions that work regardless of role, seniority, or industry:
+
+| Axis | Question it asks |
 |---|---|
-| Innovation inclination | **Inclination towards curiosity** |
-| Decision-making power | **Independence / Influence** |
+| **X — Inclination towards curiosity** | When you pick up a new tool, what do you want from it first — a result, or an understanding? |
+| **Y — Independence / Influence** | When you think, do you think alone, or do you think by talking? |
 
-The spatial logic is preserved — quadrants still mean what they did — but the questions now work for anyone operating any tool.
+Both of these describe **how a person wants to work**, not where they sit on an org chart. That's what lets the framework travel.
 
 ---
 
