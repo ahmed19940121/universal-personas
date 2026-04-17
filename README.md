@@ -11,13 +11,18 @@
 
 ## Why this exists
 
-Andrej Karpathy has a habit of teaching from first principles. When he explains a transformer, he doesn't hand you the API — he rebuilds the thing from scratch, in public, so you end up with a working mental model rather than a list of facts about it. The lesson generalises: *a real model beats any amount of surface knowledge, because the model generates the answers while the knowledge just lists them.*
+Most persona frameworks describe users by their job title — "The CTO," "The Frontend Developer," "The Marketing Manager." That stops being useful the moment you step outside the industry they were built for.
 
-Persona work has the same property at its best. A great persona isn't a demographic snapshot or a job-title dossier; it's a model of **how someone thinks**, portable enough to apply to any product or context they encounter. Given a clean model, you can derive the surface facts — what they'll tolerate, what will frustrate them, what they'll pay for — without having to memorise them.
+This one describes users by **how they think**. Five archetypes. Two simple questions. One framework that works for anyone using any tool.
 
-Most persona frameworks don't have this property. They're **job-title-centric** — "The CTO," "The Frontend Developer," "The Marketing Manager" — and they stop being useful the moment you step outside the industry they were built for. They also age poorly, because job titles drift faster than human motivations do.
+**What makes it different:**
+- 🧠 **Motivation-first, not job-title-first** — a model of thinking styles that survives across industries, roles, and life stages
+- 🎯 **Five archetypes, not fifty** — enough range to be useful, few enough to actually remember
+- 📐 **Built on two honest axes** — *what do you want from a tool?* and *do you think alone or out loud?*
+- 🔁 **Context lives in sub-personas** — the parent definitions stay clean; industry and seniority refine them without cluttering them
+- 🤖 **Designed for the AI era** — built specifically for tools where the user's job title tells you almost nothing about how to serve them
 
-This framework tries to work from first principles instead. Five archetypes, two axes, and a structural rule that context (industry, seniority, domain) lives in sub-personas rather than in the parent definitions. What you end up with is a model you can apply to anyone using any tool — particularly AI tools, content platforms, and new products, where the job title of the user tells you almost nothing useful about how to serve them.
+If you're building an AI tool, writing content, or making product decisions for a diverse audience, this gives you a model you can actually hold in your head.
 
 ---
 
@@ -37,34 +42,29 @@ Every persona in this repository has a name starting with the letter of their ar
 
 ## The two axes
 
-<table>
-<tr>
-<td width="50%">
+Everyone uses tools differently. But underneath the differences, two simple questions do most of the work in telling you what someone actually needs:
 
-### X axis — Inclination towards curiosity
+### Question 1: Why did you pick up the tool?
 
-**Outcome-led** ◀ ─────────── ▶ **Curiosity-led**
+Some people want a **result** — they've got a job to do and the tool is how they'll get it done. Others want to **understand** — they're curious about how the thing works, and the result matters less than the learning.
 
-*"I need this done"* ◀ ─── ▶ *"I want to understand this"*
+> **Outcome-led** ← *"I need this done"* | *"I want to understand this"* → **Curiosity-led**
 
-Outcome-led users reach for a tool to finish a task. Curiosity-led users reach for a tool to open a door.
+Neither is better. A brilliant expert can be outcome-led (they value their time). A total beginner can be curiosity-led (they want to learn deeply). The question is about what draws them in, not how skilled they are.
 
-</td>
-<td width="50%">
+### Question 2: How do you like to think?
 
-### Y axis — Independence / Influence
+Some people think best **alone** — they want the tool to give them what they need and then leave them to it. Others think best **out loud** — through back-and-forth conversation, whether with a person or with an AI.
 
-**Collaborative** ▼ ─────────── ▲ **Independent**
+> **Collaborative** ← *"Think with me"* | *"Give me room to work"* → **Independent**
 
-*"Think with me"* ▼ ───── ▲ *"Give me room to work"*
+Again, neither is better. This isn't about introvert vs. extrovert, or junior vs. senior. It's about how someone's brain likes to process.
 
-Collaborative users process by bouncing ideas off others (or an AI). Independent users process alone and want the tool out of their way.
+### Put the two together
 
-</td>
-</tr>
-</table>
+Answer those two questions about someone and you can place them on the map. The five personas live at five different spots on that map — each one representing a recognisably different kind of user with different needs, different frustrations, and different things they'll pay for.
 
-Read [**the full axes explanation**](framework/axes-explained.md) for the reasoning behind the placements and why "centre" is a valid position for Soren.
+Want the full reasoning? See [**the two axes in depth**](framework/axes-explained.md) — including why *The Steady* sits in the centre rather than in a corner.
 
 ---
 
@@ -89,7 +89,8 @@ universal-personas/
 ├── LICENSE                           ← CC-BY-4.0
 ├── CONTRIBUTING.md
 ├── framework/
-│   └── axes-explained.md             ← the two axes, in depth
+│   ├── axes-explained.md             ← the two axes, in depth
+│   └── llm-knowledge-spine.md        ← methodology reference for LLM persona work
 ├── Personas/
 │   ├── Architect.md                  ← 🟣 Adam
 │   ├── Explorer.md                   ← 🔵 Elan
@@ -110,6 +111,7 @@ universal-personas/
 - [x] Five parent personas written in full
 - [x] Builder sub-persona set (5 variants)
 - [x] Axis map and Builder refinement diagrams
+- [x] LLM knowledge spine for persona generation
 - [ ] Architect sub-personas (Adam, Ari, Asha, Anand, Ada)
 - [ ] Explorer sub-personas (Elan, Eli, Esha, Enzo, Eva)
 - [ ] Connector sub-personas (Cora, Cai, Cleo, Chen, Caleb)
@@ -120,31 +122,11 @@ universal-personas/
 
 ---
 
-## Further reading
+## Using this framework with an LLM
 
-The framework is designed to be useful on its own, but it draws on a long tradition of persona and user-research thinking. If you want to go deeper — or build your own persona work on firmer foundations — these are the books and resources worth your time.
+If you're using Claude, ChatGPT, or Gemini to write, refine, or apply personas with this framework, the [**LLM knowledge spine**](framework/llm-knowledge-spine.md) gives you a curated set of methodologies, a ready-to-paste system prompt, and a quality checklist for reviewing AI-generated persona work.
 
-### Books
-
-The persona canon most worth reading, roughly in order of usefulness for this framework:
-
-- **The Mom Test** — Rob Fitzpatrick. How to actually talk to users so they tell you the truth. If you're building personas from interviews, read this first.
-- **Continuous Discovery Habits** — Teresa Torres. The best modern treatment of how to keep personas alive as working artefacts rather than dead documents.
-- **Practical Empathy** — Indi Young. The deepest available guide to listening sessions and the "thinking styles" approach that informs the curiosity axis in this framework.
-- **The Inmates Are Running the Asylum** — Alan Cooper. The origin text for personas in product design. Worth reading for the history, even if the specific methodology has moved on.
-- **Designing for the Digital Age** — Kim Goodwin. The Cooper-tradition persona methodology in full, industrial-strength form.
-- **Jobs to Be Done: Theory to Practice** — Anthony Ulwick. An important counterpoint to persona-centred design; worth knowing even if you stay persona-first.
-- **Hooked** — Nir Eyal. On user motivation and habit formation; useful for filling in the "why" behind persona behaviours.
-- **Thinking, Fast and Slow** — Daniel Kahneman. The underpinning model of human decision-making that makes every persona framework richer.
-
-### Online resources
-
-- **Nielsen Norman Group** — [nngroup.com](https://www.nngroup.com) · the most-cited UX research library, with a deep persona-specific back-catalogue
-- **Indi Young** — [indiyoung.com](https://indiyoung.com) · especially her writing on listening sessions and thinking styles
-- **Product Talk (Teresa Torres)** — [producttalk.org](https://www.producttalk.org) · opportunity-solution trees, continuous discovery, interview practice
-- **Jobs-to-be-Done Institute** — [jobs-to-be-done.com](https://jobs-to-be-done.com) · the structured JTBD methodology
-- **Andrej Karpathy's lectures** — [karpathy.ai](https://karpathy.ai) · referenced in the motivation above; a worked example of teaching mental models rather than facts
-- **Basecamp's Shape Up** — [basecamp.com/shapeup](https://basecamp.com/shapeup) · persona-adjacent thinking on how user problems get framed before being solved
+Naming specific methodologies — Indi Young's thinking styles, Teresa Torres' behavioural framing, Alan Klement's JTBD forces — activates the right patterns in the model and noticeably reduces generic "persona theatre" output.
 
 ---
 
