@@ -11,7 +11,7 @@ Soren is outcome-led and sits in the **centre** of the independence / collaborat
 
 The Steady has been badly misread by AI tooling to date. The space is full of products whose documentation, community, and marketing all implicitly assume the user enjoys tinkering. Soren doesn't enjoy tinkering. Soren has a job to do and would like to do it well without learning a new hobby.
 
-The Steady is the quiet foil to [The Pioneer](https://github.com/cliff-simpkins/dev-personas/blob/main/Personas/Pioneer.md) archetype in the original dev-personas framework — and, in the universal adaptation, a foil to both [The Architect](Architect.md) and [The Explorer](Explorer.md).
+The Steady is a foil to both [The Architect](Architect.md) and [The Explorer](Explorer.md) — the two curiosity-led personas who are, by temperament, most eager to explore and extend a new tool. Where they ask *"what else can this do?"*, Soren asks *"will it keep doing what I already need?"*
 
 ### 🎯 Key Motivations
 
@@ -154,4 +154,4 @@ When evaluating a new tool, Steadies consider:
 ---
 
 ### Licensing and attribution
-Adapted from the [dev-personas framework by Cliff Simpkins](https://github.com/cliff-simpkins/dev-personas), published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). This adaptation is also CC-BY-4.0.
+Published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). You can adapt, remix, and build on this freely with attribution.
