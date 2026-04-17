@@ -11,7 +11,7 @@ Adam is curiosity-led and independent. They'll happily disappear for half a day 
 
 The Architect is a foil to [The Steady](Steady.md). Where Soren wants the box to stay closed and working, Adam wants the box opened — not because they distrust it, but because understanding **is** the reward.
 
-**A public exemplar.** Andrej Karpathy — referenced in the [README](../README.md) as the motivation for this framework's first-principles approach — is the Architect archetype made legible. His *"Neural Networks: Zero to Hero"* series doesn't teach deep learning by listing facts about it; it teaches by rebuilding the thing from scratch, line by line, so the reader leaves with a working model rather than a reference. That instinct — *"I'll only trust it once I've built it myself"* — is the Architect at their most characteristic. When you're writing for Adam, write for someone who would watch that series end-to-end, take notes, and then reimplement it in a different language on the weekend for fun.
+**A public exemplar.** Andrej Karpathy — referenced in [the framework's first-principles motivation](../framework/axes-explained.md#first-why-build-a-framework-this-way-at-all) — is the Architect archetype made legible. His *"Neural Networks: Zero to Hero"* series doesn't teach deep learning by listing facts about it; it teaches by rebuilding the thing from scratch, line by line, so the reader leaves with a working model rather than a reference. That instinct — *"I'll only trust it once I've built it myself"* — is the Architect at their most characteristic. When you're writing for Adam, write for someone who would watch that series end-to-end, take notes, and then reimplement it in a different language on the weekend for fun.
 
 ### 🎯 Key Motivations
 
