@@ -4,7 +4,7 @@ Thanks for considering a contribution. This framework benefits from input, and t
 
 ## What this framework is (and isn't)
 
-**It is:** a portable, motivation-centric adaptation of the dev-personas framework, designed to travel across industries and product contexts.
+**It is:** a portable, motivation-centric persona framework, designed to travel across industries and product contexts.
 
 **It isn't:** a job-title directory, a demographic segmentation, or a replacement for primary research on your actual users. Use it as scaffolding; validate against real humans.
 
