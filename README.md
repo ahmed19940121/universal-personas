@@ -11,11 +11,13 @@
 
 ## Why this exists
 
-Most persona frameworks are **job-title-centric** — "The CTO," "The Frontend Developer," "The Marketing Manager." They stop being useful the moment you step outside the industry they were built for, and they age poorly because roles drift faster than motivations do.
+Andrej Karpathy has a habit of teaching from first principles. When he explains a transformer, he doesn't hand you the API — he rebuilds the thing from scratch, in public, so you end up with a working mental model rather than a list of facts about it. The lesson generalises: *a real model beats any amount of surface knowledge, because the model generates the answers while the knowledge just lists them.*
 
-This repository adapts [Cliff Simpkins' excellent **dev-personas**](https://github.com/cliff-simpkins/dev-personas) framework into something portable. Simpkins built five motivation-centric archetypes for developers. I've generalised them to any human using modern tools — particularly AI tools, content platforms, and new products where the *job title* of the user tells you almost nothing useful about how to serve them.
+Persona work has the same property at its best. A great persona isn't a demographic snapshot or a job-title dossier; it's a model of **how someone thinks**, portable enough to apply to any product or context they encounter. Given a clean model, you can derive the surface facts — what they'll tolerate, what will frustrate them, what they'll pay for — without having to memorise them.
 
-The axes, the structure, and the underlying insight are his. The universalisation is mine.
+Most persona frameworks don't have this property. They're **job-title-centric** — "The CTO," "The Frontend Developer," "The Marketing Manager" — and they stop being useful the moment you step outside the industry they were built for. They also age poorly, because job titles drift faster than human motivations do.
+
+This framework tries to work from first principles instead. Five archetypes, two axes, and a structural rule that context (industry, seniority, domain) lives in sub-personas rather than in the parent definitions. What you end up with is a model you can apply to anyone using any tool — particularly AI tools, content platforms, and new products, where the job title of the user tells you almost nothing useful about how to serve them.
 
 ---
 
@@ -118,10 +120,36 @@ universal-personas/
 
 ---
 
-## Credit & license
+## Further reading
 
-This framework is an adaptation of **dev-personas** by [Cliff Simpkins](https://github.com/cliff-simpkins/dev-personas), which is itself published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). The axis model, the motivation-centric approach, and the persona document structure all originate there. If you use this work, please credit both repositories.
+The framework is designed to be useful on its own, but it draws on a long tradition of persona and user-research thinking. If you want to go deeper — or build your own persona work on firmer foundations — these are the books and resources worth your time.
 
-This repository is also published under [CC-BY-4.0](LICENSE). You can adapt, remix, and build on it freely — including commercially — provided you give appropriate credit.
+### Books
+
+The persona canon most worth reading, roughly in order of usefulness for this framework:
+
+- **The Mom Test** — Rob Fitzpatrick. How to actually talk to users so they tell you the truth. If you're building personas from interviews, read this first.
+- **Continuous Discovery Habits** — Teresa Torres. The best modern treatment of how to keep personas alive as working artefacts rather than dead documents.
+- **Practical Empathy** — Indi Young. The deepest available guide to listening sessions and the "thinking styles" approach that informs the curiosity axis in this framework.
+- **The Inmates Are Running the Asylum** — Alan Cooper. The origin text for personas in product design. Worth reading for the history, even if the specific methodology has moved on.
+- **Designing for the Digital Age** — Kim Goodwin. The Cooper-tradition persona methodology in full, industrial-strength form.
+- **Jobs to Be Done: Theory to Practice** — Anthony Ulwick. An important counterpoint to persona-centred design; worth knowing even if you stay persona-first.
+- **Hooked** — Nir Eyal. On user motivation and habit formation; useful for filling in the "why" behind persona behaviours.
+- **Thinking, Fast and Slow** — Daniel Kahneman. The underpinning model of human decision-making that makes every persona framework richer.
+
+### Online resources
+
+- **Nielsen Norman Group** — [nngroup.com](https://www.nngroup.com) · the most-cited UX research library, with a deep persona-specific back-catalogue
+- **Indi Young** — [indiyoung.com](https://indiyoung.com) · especially her writing on listening sessions and thinking styles
+- **Product Talk (Teresa Torres)** — [producttalk.org](https://www.producttalk.org) · opportunity-solution trees, continuous discovery, interview practice
+- **Jobs-to-be-Done Institute** — [jobs-to-be-done.com](https://jobs-to-be-done.com) · the structured JTBD methodology
+- **Andrej Karpathy's lectures** — [karpathy.ai](https://karpathy.ai) · referenced in the motivation above; a worked example of teaching mental models rather than facts
+- **Basecamp's Shape Up** — [basecamp.com/shapeup](https://basecamp.com/shapeup) · persona-adjacent thinking on how user problems get framed before being solved
+
+---
+
+## Licence
+
+This repository is published under [CC-BY-4.0](LICENSE). You can adapt, remix, and build on it freely — including commercially — provided you give appropriate credit.
 
 The personas in this repository are fictional. Any resemblance to real people is coincidental and unintended.
