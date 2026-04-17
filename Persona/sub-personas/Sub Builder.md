@@ -135,4 +135,4 @@ The parent Builder page tells you *what they all share*. This page tells you *wh
 ---
 
 ### Licensing and attribution
-Adapted from the [dev-personas framework by Cliff Simpkins](https://github.com/cliff-simpkins/dev-personas), published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). This adaptation is also CC-BY-4.0.
+Published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). You can adapt, remix, and build on this freely with attribution.
