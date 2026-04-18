@@ -123,6 +123,9 @@ When reviewing an LLM's persona output, check:
 - [ ] Are claims about behaviour grounded or invented? *("Research shows…" with no citation is a hallucination tell.)*
 
 ---
-
+- Avoid marketing language, demographic stereotypes, and "persona theatre"
+- When disposition and current task disagree, code to disposition, not task
+- Domain experts using AI in their field are usually Builders (Benedict), not Steadies
+---
 ### Licensing and attribution
 Published under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). You can adapt, remix, and build on this freely with attribution.
