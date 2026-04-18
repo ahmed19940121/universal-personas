@@ -196,3 +196,27 @@ It's very easy to end up serving only Architects and Explorers — the loud, cur
 Builders, Connectors, and Steadies are the quieter majority. They're less visible online, less likely to respond to a survey, less likely to post a review. But they're numerically much larger, and they leave silently when a product doesn't serve them. **Most products don't lose them with a dramatic failure — they lose them with a thousand small accidental exclusions.**
 
 The framework is most useful as a tool for catching those exclusions before they ship.
+
+---
+
+## When the axes conflict
+
+Most real users don't sit cleanly in one corner. The axes do most of the work, but two recurring tensions come up often enough that they deserve explicit rules.
+
+### When disposition and current task disagree, code to disposition
+
+Many users have an outcome in front of them *and* a curious disposition underneath it. A CTO evaluating Claude for internal rollout has an outcome — make a recommendation — but says "I won't recommend a tool I don't understand." The outcome is task-level; the curiosity is the lasting pattern.
+
+In those cases, **classify by disposition, not task.** The CTO is an Architect, not a Builder, even though today's work is a purchase decision. An art teacher making lesson plans who asks "what if we tried mosaics?" is an Explorer, not a Connector, even though the artefact she ships is a lesson plan.
+
+The rule of thumb: imagine the same person approaching ten different problems over a year. The disposition is what stays constant. The task is what changes. Code to what stays constant.
+
+### Expert user ≠ expert builder
+
+This is the single most common misclassification.
+
+A domain expert — a GP summarising patient intake forms, an accountant using AI for client drafts, a lawyer checking contracts — is usually a **Builder** (specifically the Benedict sub-persona), not a Steady. They want accurate output so they can get back to the work they're actually paid to do.
+
+Steady's signature is tech caution: *"I'm not really a tech person."* A confident professional who sets up a tool and moves on is competent with a deadline, not cautious about technology. That's Builder behaviour.
+
+Only classify someone as Steady when they show **explicit tech hesitancy**, a pattern of needing reassurance over results, or stability-seeking ("if it's working, I'm happy") combined with reluctance to customise. Mid-career professionals who set things up and get on with their work are Builders.
