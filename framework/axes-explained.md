@@ -21,9 +21,7 @@ If you just want the headline version, [the README covers it](../README.md#the-t
 
 ## First, why build a framework this way at all
 
-Andrej Karpathy has a habit of teaching from first principles. When he explains a transformer, he doesn't hand you the API — he rebuilds the thing from scratch, in public, so you end up with a working mental model rather than a list of facts about it. The lesson generalises: *a real model beats any amount of surface knowledge, because the model generates the answers while the knowledge just lists them.*
-
-Persona work has the same property at its best. A great persona isn't a demographic snapshot or a job-title dossier; it's a model of **how someone thinks**. Given a clean model, you can work out what someone will tolerate, what will frustrate them, and what they'll pay for — without having to memorise a long list of facts about them.
+A great persona isn't a demographic snapshot or a job-title dossier; it's a model of **how someone thinks**. Given a clean model, you can work out what someone will tolerate, what will frustrate them, and what they'll pay for — without having to memorise a long list of facts about them.
 
 Most persona frameworks don't work this way. They describe users by job title — *"The CTO," "The Frontend Developer," "The Marketing Manager"* — and they stop being useful the moment you step outside the industry they were built for. They also age badly, because job titles drift faster than human motivations do.
 
